@@ -96,31 +96,86 @@ textarea {
    ========================================================================== */
 
 
-html {
-  background-color: rgb(68, 66, 66);
+html { 
   height: 100%;
   width: 100%;
 }
 
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
-  font-size: 1.25em;
-  height: 100%;
+body {    
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0 2em;
+    font-size: 1.25em;
+    background-image: url(../img/car-on-map.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
 }
 
-.wrapper {
+header,
+ footer {
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+
+ }
+
+header h1 {
+    font-size: 3em;
+    font-weight: 800;
+    color: rgb(211, 209, 206);
+}
+
+main {
+    width: 100%;
+    justify-content: center;
+}
+
+main p {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: rgb(211, 209, 206);
+}
+.main-background {
+    background-color: rgba(31, 97, 125, 0.7);
+
+}
+
+footer,
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    display: block;
+    padding: 20px;
+    margin: inherit;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+
+}
+
+.flex-items {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 600;
+  font-weight: 500;
+  padding: 1px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-basis: inherit;
+  background-color: rgba(4, 79, 111, 0.7);
 }
 
-.div-1, .div-2, .div-3 {
+#div-1, #div-2, #div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
+  color: rgb(253, 249, 249);
   line-height: 1.5em;
   font-size: 1em;
   height: auto;
@@ -128,13 +183,34 @@ body {
   width: 30%;
   justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  border-right: 2px solid #555;
+  border-bottom: 2px solid #555;
+  margin-top: 10px;
 
 }
 
-.div-1, .div-2 {
-    border-right: 1px solid #555;
-    padding-right: 30px;
+#div-1, #div-2 {
+    border-right: 2px solid #555;
+    padding-right: 20px;
 }
+
+.flex-container span {
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex-items span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.289em;
+}
+  
+footer i {
+    padding: 30px 20px 0 0; 
+ }
+
+ footer {
+    border-bottom: 2px solid #555;
+ }
 
 
 
